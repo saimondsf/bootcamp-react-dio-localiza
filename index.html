@@ -1,54 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saimon Davi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="perfil.jpg" alt="foto de perfil do Saimon" class="post_image_main">
-        <h1 id="title">Saimon</h1>
-    </header>
-    <section>
-        <header>
-            <h2 class="subtitle">Posts</h2>
-        </header>
-        <article class="post">
-            <header>
-                <h3 class="post_title">Post #1</h3>
-            </header>
-            <img src="postagem.jpg" alt="imagem de tela com códigos de programação" class="post_image">
-            <p class="post_content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tempore quas voluptate doloribus voluptatum aut temporibus, debitis saepe! Similique repudiandae ea eum fuga quo distinctio aliquam incidunt consequatur possimus voluptates vitae tempore soluta ex quis repellat adipisci, reprehenderit dicta quisquam placeat, natus vel, necessitatibus temporibus atque cumque? Itaque inventore, maiores obcaecati saepe nobis veniam, officiis tempora quibusdam dolorum similique illo, aperiam doloremque delectus ipsum natus quidem repellat voluptates numquam culpa quasi laudantium! Laborum, explicabo, commodi repudiandae sed voluptas porro natus sunt similique, itaque nobis quas qui aperiam? Quidem deleniti odio culpa, enim corporis, provident fuga suscipit tempora dolorem ipsam architecto?
-            </p>
-        </article>
-    </section>
-    <footer>
-        <ul class="contacts_list">
-            <li>
-                <a href="mailto:saimon.dsfg@gmail.com">saimon.dsfg@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/saimon-davi-79a115189/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://github.com/SaimonDavi" target="_blank">GitHub</a>
-            </li>
-        </ul>
-        <ol>
-            <li>
-                <a href="mailto:saimon.dsfg@gmail.com">saimon.dsfg@gmail.com</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/saimon-davi-79a115189/" target="_blank">LinkedIn</a>
-            </li>
-            <li>
-                <a href="https://github.com/SaimonDavi" target="_blank">GitHub</a>
-            </li>
-        </ol>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minha página</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="/main.js"></script>     
+    </head>
+    
+    <body onload="load()">
+        <h1 id="title">Minha página</h1>
+
+        <p id="movimentoMouse" class="subtitle" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+
+        <button type="button" onclick="clique()">Clique aqui</button>
+
+        <p id="textoAgradecimento" class="subtitle" onclick="redirecionar()"></p>
+        
+    </body>
 </html>
