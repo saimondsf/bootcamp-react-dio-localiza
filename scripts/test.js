@@ -89,26 +89,26 @@
 
 //---------------------------------------------------------//
 //SEQUÊNCIA DE FIBONACCI
-let prompt = require('prompt-sync')();
-let limite = parseInt(prompt());
+// let prompt = require('prompt-sync')();
+// let limite = parseInt(prompt());
 
-let fib = Array(limite);
+// let fib = Array(limite);
 
-for(i=0; i< limite; i++){
-    if(i==0){
-        fib[i] = 0;
-    }
-    else if(i==1){
-        fib[i] = 1;
-    }
-    else if(i==2){
-        fib[i] = 1;
-    }
-    else if(i>=3){
-        fib[i] = fib[i-1] + fib[i-2];
-    }
-}
-console.log(fib.join(' '));
+// for(i=0; i< limite; i++){
+//     if(i==0){
+//         fib[i] = 0;
+//     }
+//     else if(i==1){
+//         fib[i] = 1;
+//     }
+//     else if(i==2){
+//         fib[i] = 1;
+//     }
+//     else if(i>=3){
+//         fib[i] = fib[i-1] + fib[i-2];
+//     }
+// }
+// console.log(fib.join(' '));
 
 // FORMATO PARA ENTREGAR O DESAFIO NA DIO
 
