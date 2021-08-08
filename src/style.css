@@ -1,60 +1,120 @@
-html {
-    font-size: 62.5% /* 10px */;
+:root {
+    --vermelho: #e50914;
+    --preto: #121212;
+    --branco: #ffffff;
+    --cinza: #808080;
+    
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos Base / Header */
 body {
-    background-color: #00324d;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #f0f8ff;
-    font-size: 1.8rem;
+    background: var(--preto);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--branco);
 }
 
-.linha{
+header .container {
     display: flex;
-    flex-flow: row wrap;
-    padding: 1rem;
-    margin: 3rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.coluna{
-    width: 50%;
-}
+header .logo {
+    color: var(--vermelho);
 
-h1 {
+    font-weight: bold;
+    font-size: 50px;
     text-transform: uppercase;
 }
 
-p {
-    font-style: italic;
+header nav a {
+    text-decoration: none;
+    color: var(--branco);
+    margin-right: 10px;
+    transition-property: color;
+    transition-duration: .3s;
 }
 
-button, #button {
-    border-radius: .8rem;
-    height: 3rem;
-    background: whitesmoke;
-    color: #00131d;
+header nav a:hover{
+    color: var(--cinza);
+    transition-property: color;
+    transition-duration: .3s;
+}
+
+/* Elementos do Banner Principal */
+
+.filmePrincipal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url('/img/capa-house.jpg');
+    height: 500px;
+    background-size: cover;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;                   
+}
+
+.filmePrincipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filmePrincipal .titulo {
+    margin-top: 10%;
+    font-size: 40px;
     font-weight: bold;
-    transition: filter .15s;
-    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-button:hover, #button:hover {
-    filter: brightness(1.1);
-}
-
-#selecionadorIdade {
-    border-radius: .8rem;
-    height: 3rem;
-    background-color: whitesmoke;
-    color: #00131d;
+.botao {
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: var(--branco );
     font-weight: bold;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filmePrincipal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
     cursor: pointer;
 }
 
-#area, #numero1, #numero2 {
-    background-color: whitesmoke;
-    border-radius: .8rem;
-    cursor: pointer;
+.carrosel-filmes {
+    margin-top:5px;
 }
