@@ -1,4 +1,4 @@
-to run this file in node is necessary have installed in your computer the NPM with this line command:
+to run this file in Node is necessary the file package.json, creating with this line command:
 'npm init -y'
 
 to insert in your program variables and have a interface in the prompt use this line of command to instal the library prompt-sync:
