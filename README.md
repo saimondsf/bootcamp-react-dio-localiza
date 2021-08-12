@@ -1,39 +1,70 @@
-Running React files
-Rodando arquivos React
+# Getting Started with Create React App
 
-- Initially it is necessary to install the following libraries with the command:
-- Inicialmente é necessário instalar as seguintes bibliotecas com o comando:
-'npm install next react react-dom react-scripts'
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Next we create a folder called "pages" and inside it the file "index.js" containing a function called
-'function Home() { return() }' ​​and export 'export default Home'
-- Em seguida criamos uma pasta chamada "pages" e dentro dela o arquivo "index.js" contendo uma função chamada
-'function Home () { return () }' e exportamos 'export default Home'
+## Available Scripts
 
-- Then it is necessary to change the 'package.json' file to the following part:
-- Em seguida é necessário alterar o arquivo 'package.json' a seguinte parte:
-"scripts": {
-    "dev" : "next dev"
-    },
+In the project directory, you can run:
 
-- To run the application just run the following command:
-- Para rodar a aplicação basta executar o seguinte comando:
-'npm run dev'
+### `npm start`
 
-===============================================================================================================
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Using the "prompt-sync" library
-Usando a biblioteca "prompt-sync"
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- To run this file in Node is necessary the file package.json, creating with this line command:
-- Para rodar este arquivo no Node é necessário o arquivo package.json, criando com esta linha de comando:
-'npm init -y'
+### `npm test`
 
-- To insert in your program variables and have a interface in the prompt use this line of command to instal the library prompt-sync:
-- Para inserir em suas variáveis ​​de programa e ter uma interface no prompt, use esta linha de comando para instalar a biblioteca prompt-sync:
-'npm i prompt-sync'
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Here just a example to show entry date in your program forward the prompt:
-- Aqui está apenas um exemplo para mostrar a data de entrada em seu programa para encaminhar o prompt:
-'    let prompt = require('prompt-sync')();     '
-'    let limite = parseInt(prompt());           '
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
