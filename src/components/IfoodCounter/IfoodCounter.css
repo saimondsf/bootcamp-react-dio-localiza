@@ -1,0 +1,39 @@
+.countex-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border: 3px solid rgb(192, 192, 192);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 20%;
+    font-size: medium;
+}
+
+.counter-button-plus-active {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    font-size: large;
+    color: red;
+    cursor: pointer;
+}
+
+.counter-button-minus-active {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    font-size: large;
+    color: red;
+    cursor: pointer;
+}
+
+.counter-button-minus-desactive {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    font-size: larger;
+    color: rgb(105, 105, 105);
+    cursor: pointer;
+}
