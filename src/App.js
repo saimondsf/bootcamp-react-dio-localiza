@@ -1,11 +1,12 @@
 import styled from 'styled-components'; //npm install --save styled-components
-import Counter from './components/Counter/Counter';
+import SmartCounter from './components/SmartCounter/SmartCounter';
 
 
 const App = () => {
   return (
     <Content>
-      <Counter/>
+      <h1>Hello World</h1>
+      <SmartCounter/>
     </Content>
   )
 }
