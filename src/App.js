@@ -1,18 +1,11 @@
-import Item from './components/Item';
-import Card from './components/Card';
 import styled from 'styled-components'; //npm install --save styled-components
+import Counter from './components/Counter/Counter';
 
 
 const App = () => {
   return (
     <Content>
-      <h1>Aplicação React</h1>
-      <ul>
-      <Item>Item 1</Item>
-      <Item>Item 2</Item>
-      <Item>Item 3</Item>
-      </ul>
-      <Card/>
+      <Counter/>
     </Content>
   )
 }
