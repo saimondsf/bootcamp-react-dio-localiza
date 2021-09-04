@@ -1,17 +1,17 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Container } from './style';
+import { Reset } from 'styled-reset';
+
+import Home from './pages/Home';
 import theme from './theme';
 
-
-const App = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
-        <h1>Olá</h1>
-      </Container>
+      <Reset />
+      <Home />
     </ThemeProvider>
   );
-};
+}
 
 export default App;
